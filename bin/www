@@ -8,8 +8,8 @@ let app = require('../app');
 let debug = require('debug')('cv-api:server');
 let http = require('http');
 
-const database = require('../src/config/db.config');
-const mainRouter = require('../src/routes/main.router');
+const database = require('../config/db.config');
+const mainRouter = require('../routes/main.router');
 
 app.use('/api/v1', mainRouter);
 
